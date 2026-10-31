@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Du bois de pizzeria de qualitÃ© et 100% local Ã  Fleurus</title>
-<meta name="description" content="Faites confiance Ã  un expert pour votre approvisionnement en bois pour fours Ã  pizza et obtenez une cuisson parfaite de tous vos plats."/>
+<meta charset="UTF-8">
+<title>Du bois de pizzeria de qualité et 100% local à Fleurus</title>
+<meta name="description" content="Faites confiance à un expert pour votre approvisionnement en bois pour fours à pizza et obtenez une cuisson parfaite de tous vos plats."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 	
 <link rel="icon" href="favicon.ico">
@@ -32,7 +32,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="header" id="header">
     <div class="wrapper_large animate fade_in delay-300">
-        <a href="index.php" class="logo" title="Accueil">
+        <a href="index.html" class="logo" title="Accueil">
             <img src="images/logo.svg" width="73" height="72" alt="Julien Boucquiaux">
             <span>Julien <br>Boucquiaux</span>
         </a> 
@@ -42,27 +42,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <nav class="header_nav">
             <ul class="menu">
-                <li ><a href="index.php" title="Accueil">Accueil</a></li>
-                <li ><a href="exploitant-forestier-fleurus.php" title="Qui suis-je ?">Qui suis-je ?</a></li>
-                <li ><a href="tarifs.php" title="Tarifs">Tarifs</a></li>
+                <li ><a href="index.html" title="Accueil">Accueil</a></li>
+                <li ><a href="exploitant-forestier-fleurus.html" title="Qui suis-je ?">Qui suis-je ?</a></li>
+                <li ><a href="tarifs.html" title="Tarifs">Tarifs</a></li>
                 <li  class='active'><a title="Produits" style="cursor: default">Produits</a><i></i>
                     <ul class="sub">
-                        <li ><a href="vente-bois-de-chauffage-hainaut.php" title="Bois de chauffage">Bois de chauffage en vrac et en palette</a></li>
-                        <li  class='active'><a href="bois-pizzeria.php" title="Bois de pizzeria">Bois de pizzeria</a></li>
-                        <li ><a href="bois-allumage.php" title="Bois dâ€™allumage">Bois dâ€™allumage</a></li>
-                        <li ><a href="buches-compressees.php" title="Buches compressÃ©es">Buches compressÃ©es</a></li>
-                        <li ><a href="pellets.php" title="Pellets Pauls">Pellets Pauls</a></li>
+                        <li ><a href="vente-bois-de-chauffage-hainaut.html" title="Bois de chauffage">Bois de chauffage en vrac et en palette</a></li>
+                        <li  class='active'><a href="bois-pizzeria.html" title="Bois de pizzeria">Bois de pizzeria</a></li>
+                        <li ><a href="bois-allumage.html" title="Bois d’allumage">Bois d’allumage</a></li>
+                        <li ><a href="buches-compressees.html" title="Buches compressées">Buches compressées</a></li>
+                        <li ><a href="pellets.html" title="Pellets Pauls">Pellets Pauls</a></li>
                     </ul>
                 </li>
-                <li ><a href="services.php" title="Services">Services</a><i></i>
+                <li ><a href="services.html" title="Services">Services</a><i></i>
                     <ul class="sub">
                         <li ><a href="services.php#livraison" title="Livraisons en vrac">Livraisons en vrac et en palette</a></li>
                         <li ><a href="services.php#self" title="Self-service">Self-service</a></li>
 <!--                        <li ><a href="services.php#exploitation" title="Exploitation">Exploitation</a></li>-->
                     </ul>
                 </li>   
-                <li ><a href="photos.php" title="Photos">Photos</a></li>
-                <li ><a href="contact.php" title="Contact">Contact</a></li>
+                <li ><a href="photos.html" title="Photos">Photos</a></li>
+                <li ><a href="contact.html" title="Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="menu_mobile"><div></div></div>
@@ -73,22 +73,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="wrapper_large animate">
 			<div class="content animate fade_in delay-300">
 				<ul class="breadcrumb">
-					<li><a href="index.php" title="Accueil">Accueil</a></li>
+					<li><a href="index.html" title="Accueil">Accueil</a></li>
                     <li><a title="Produits">Produits</a></li>
-					<li><a href="bois-pizzeria.php" title="Bois de pizzeria" class="active">Bois de pizzeria</a></li>
+					<li><a href="bois-pizzeria.html" title="Bois de pizzeria" class="active">Bois de pizzeria</a></li>
 				</ul>
                 <div class="icone_titre">
                     <img src="images/bois_pizzeria.svg" width="62" height="62" alt="">
                     <div>
-                        <h1 class="titre_main">Un bois de pizzeria de qualitÃ©</h1>
+                        <h1 class="titre_main">Un bois de pizzeria de qualité</h1>
                     </div>
                 </div>
-				<h2 class="chapo">Vous Ãªtes restaurateur ou pizzaÃ¯olo&nbsp;? Saviez-vous que, pour optimiser votre four, du bois spÃ©cifique est primordial&nbsp;? Vous y gagnerez en qualitÃ© de braise et de chaleur et vous pourrez servir des aliments parfaitement cuits Ã  vos clients. En raison de son taux dâ€™humiditÃ©, mon bois se prÃªte particuliÃ¨rement aux pizzerias disposant dâ€™un four Ã  bois, mais il est aussi adaptÃ© aux autres modes de cuisson, comme les fours de boulanger.</h2>
+				<h2 class="chapo">Vous êtes restaurateur ou pizzaïolo&nbsp;? Saviez-vous que, pour optimiser votre four, du bois spécifique est primordial&nbsp;? Vous y gagnerez en qualité de braise et de chaleur et vous pourrez servir des aliments parfaitement cuits à vos clients. En raison de son taux d’humidité, mon bois se prête particulièrement aux pizzerias disposant d’un four à bois, mais il est aussi adapté aux autres modes de cuisson, comme les fours de boulanger.</h2>
                 <br>
                 <a href="tarifs.php#tarif_2" title="Nos tarifs" class="link lighthover cta-tarifs">
                     <span class="cta-tarifs">
-                        <img src="images/prix_brown.svg" width="22" height="26" alt="Icone Ã©tiquette de prix" class="cta-tarifs">
-                        DÃ©couvrez nos tarifs
+                        <img src="images/prix_brown.svg" width="22" height="26" alt="Icone étiquette de prix" class="cta-tarifs">
+                        Découvrez nos tarifs
                     </span>
                 </a>
 
@@ -102,45 +102,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 			<div class="texte fade_in delay-400">
 				<h3 class="sous_titre">Expert en bois de pizzeria</h3>
-				<p>Dans le monde de la pizzeria artisanale, choisir le bon bois pour alimenter les fours Ã  pizza est crucial. Le bois appropriÃ© peut transformer une simple pizza en une vÃ©ritable expÃ©rience culinaire, en apportant des saveurs authentiques. C'est pour cette raison que les propriÃ©taires de pizzerias se tournent vers des fournisseurs spÃ©cialisÃ©s pour acquÃ©rir un bois adaptÃ© Ã  leurs besoins.</p>	
-                <p>Fort de 14 ans d'expÃ©rience dans le bois de chauffage, je connais les essences et les mÃ©langes qui fonctionnent le mieux pour votre four Ã  pizza. Je vous conseille en fonction de vos besoins spÃ©cifiques sur le type de bÃ»ches Ã  privilÃ©gier. Mon stock me permet de rÃ©pondre rapidement Ã  vos demandes de rÃ©approvisionnement en bois de cuisson.</p>	
+				<p>Dans le monde de la pizzeria artisanale, choisir le bon bois pour alimenter les fours à pizza est crucial. Le bois approprié peut transformer une simple pizza en une véritable expérience culinaire, en apportant des saveurs authentiques. C'est pour cette raison que les propriétaires de pizzerias se tournent vers des fournisseurs spécialisés pour acquérir un bois adapté à leurs besoins.</p>	
+                <p>Fort de 14 ans d'expérience dans le bois de chauffage, je connais les essences et les mélanges qui fonctionnent le mieux pour votre four à pizza. Je vous conseille en fonction de vos besoins spécifiques sur le type de bûches à privilégier. Mon stock me permet de répondre rapidement à vos demandes de réapprovisionnement en bois de cuisson.</p>	
 			</div>
 		</div>
         <div class="bloc_texte animate fade_in delay-300">
-            <h3 class="sous_titre">Une fiabilitÃ© pour toutes vos commandes de bois</h3>
-            <p>Lorsqu'il s'agit de fournir du bois pour une pizzeria, je sais combien il est crucial pour les propriÃ©taires d'avoir un fournisseur fiable qui peut garantir un approvisionnement constant et cohÃ©rent. La ponctualitÃ© et la rÃ©gularitÃ© des livraisons sont essentielles pour assurer que le bois est disponible exactement quand il le faut, car une pizzeria ne peut se permettre de manquer de combustible pour son four. Je comprends l'importance de ces aspects et je travaille en Ã©troite collaboration avec les pizzerias pour rÃ©pondre Ã  leurs besoins spÃ©cifiques en bois de chauffage.</p>
+            <h3 class="sous_titre">Une fiabilité pour toutes vos commandes de bois</h3>
+            <p>Lorsqu'il s'agit de fournir du bois pour une pizzeria, je sais combien il est crucial pour les propriétaires d'avoir un fournisseur fiable qui peut garantir un approvisionnement constant et cohérent. La ponctualité et la régularité des livraisons sont essentielles pour assurer que le bois est disponible exactement quand il le faut, car une pizzeria ne peut se permettre de manquer de combustible pour son four. Je comprends l'importance de ces aspects et je travaille en étroite collaboration avec les pizzerias pour répondre à leurs besoins spécifiques en bois de chauffage.</p>
         </div>
         <div class="bloc_texte animate fade_in delay-300">
-            <h3 class="sous_titre">Des bÃ»ches 100% belges</h3>
-            <p>Toutes mes bÃ»ches proviennent de bois sec 100% belge et bÃ©nÃ©ficient d'une certification 100% locale, garantissant la qualitÃ© supÃ©rieure de mes produits. De plus, je m'assure que le <a href="tarifs.php" title="prix de mon bois de chauffage">prix de mon bois de chauffage</a> restent extrÃªmement compÃ©titifs. Contactez-moi directement, je prendrai personnellement votre commande et vous fournirai des conseils experts pour maximiser l'efficacitÃ© de votre feu et de votre four Ã  pizza.</p>
+            <h3 class="sous_titre">Des bûches 100% belges</h3>
+            <p>Toutes mes bûches proviennent de bois sec 100% belge et bénéficient d'une certification 100% locale, garantissant la qualité supérieure de mes produits. De plus, je m'assure que le <a href="tarifs.html" title="prix de mon bois de chauffage">prix de mon bois de chauffage</a> restent extrêmement compétitifs. Contactez-moi directement, je prendrai personnellement votre commande et vous fournirai des conseils experts pour maximiser l'efficacité de votre feu et de votre four à pizza.</p>
         </div>
 	</div>
 
 	<div class="wrapper">
 		<div class="table_plus animate fade_in delay-300">
-			<h3 class="sous_titre">Vos questions frÃ©quentes</h3>
+			<h3 class="sous_titre">Vos questions fréquentes</h3>
 			<div class="item">
-				<div class="titre_plus">Pourquoi privilÃ©gier le bois sec pour votre pizzeria&nbsp;?</div>
+				<div class="titre_plus">Pourquoi privilégier le bois sec pour votre pizzeria&nbsp;?</div>
 				<div class="hide">
-					<p>Le bois utilisÃ© dans les fours Ã  pizza doit rÃ©pondre Ã  des critÃ¨res spÃ©cifiques pour garantir une cuisson optimale. Tout d'abord, il doit Ãªtre sec et bien vieilli pour brÃ»ler de maniÃ¨re efficace et produire une chaleur constante. Le bois humide ou frais peut entraÃ®ner une combustion incomplÃ¨te, produisant de la fumÃ©e qui peut altÃ©rer le goÃ»t de la pizza et la texture de la croÃ»te. Par consÃ©quent, les pizzerias ont besoin dâ€™un partenaire de qualitÃ© pour leur fournir du bois sec et de haute qualitÃ©.</p>
+					<p>Le bois utilisé dans les fours à pizza doit répondre à des critères spécifiques pour garantir une cuisson optimale. Tout d'abord, il doit être sec et bien vieilli pour brûler de manière efficace et produire une chaleur constante. Le bois humide ou frais peut entraîner une combustion incomplète, produisant de la fumée qui peut altérer le goût de la pizza et la texture de la croûte. Par conséquent, les pizzerias ont besoin d’un partenaire de qualité pour leur fournir du bois sec et de haute qualité.</p>
 				</div>
 			</div>
 			<div class="item">
 				<div class="titre_plus">Quels sont mes conditions de livraison&nbsp;? </div>
 				<div class="hide">
-					<p>Je vous livre dans un rayon autour de 40 km autour de Fleurus. Mon bois est livrÃ© gratuitement en stÃ¨re directement Ã  votre restaurant avec un minimum de 5 stÃ¨res. Si vous le souhaitez, vous pouvez Ã©galement venir chercher vos bÃ»ches pour votre four Ã  pizzas dans le self-service Ã  Fleurus. </p>
+					<p>Je vous livre dans un rayon autour de 40 km autour de Fleurus. Mon bois est livré gratuitement en stère directement à votre restaurant avec un minimum de 5 stères. Si vous le souhaitez, vous pouvez également venir chercher vos bûches pour votre four à pizzas dans le self-service à Fleurus. </p>
 				</div>
 			</div>
 			<div class="item">
-				<div class="titre_plus">Quelle grandeur de bÃ»ches est disponible&nbsp;?</div>
+				<div class="titre_plus">Quelle grandeur de bûches est disponible&nbsp;?</div>
 				<div class="hide">
-					<p>Je propose des stÃ¨res de bois coupÃ© en bÃ»che de 33 ou 50 cm de diamÃ¨tre. Nâ€™oubliez pas que plus vos bÃ»ches sont grandes, plus vous avez besoin dâ€™espace de stockage pour un mÃªme volume de bois. Je peux dâ€™ailleurs vous livrer rÃ©guliÃ¨rement en fonction de vos besoins, afin de faire avec la grandeur de votre espace de stockage.</p>
+					<p>Je propose des stères de bois coupé en bûche de 33 ou 50 cm de diamètre. N’oubliez pas que plus vos bûches sont grandes, plus vous avez besoin d’espace de stockage pour un même volume de bois. Je peux d’ailleurs vous livrer régulièrement en fonction de vos besoins, afin de faire avec la grandeur de votre espace de stockage.</p>
 				</div>
 			</div>
             <div class="item">
 				<div class="titre_plus">Quelles essences de bois choisir&nbsp;?</div>
 				<div class="hide">
-					<p>Certaines essences comme le bouleau brÃ»lant mieux que dâ€™autres, celles-ci seront Ã  privilÃ©gier lors de vos commandes de bois de cuisson. Je peux vous conseiller des essences qui brÃ»lent rapidement pour obtenir des braises idÃ©ales pour une cuisson parfaite. Pour des conseils personnalisÃ©s, je veille Ã©galement aux crÃ©pitements des essences afin dâ€™Ã©viter que des cendres ne soient en contact avec les aliments. Pour terminer, pour empÃªcher que la pÃ¢te Ã  pizza ne brÃ»le, je prÃ©conise toujours des bÃ»ches offrant une chaleur douce et constante.</p>
+					<p>Certaines essences comme le bouleau brûlant mieux que d’autres, celles-ci seront à privilégier lors de vos commandes de bois de cuisson. Je peux vous conseiller des essences qui brûlent rapidement pour obtenir des braises idéales pour une cuisson parfaite. Pour des conseils personnalisés, je veille également aux crépitements des essences afin d’éviter que des cendres ne soient en contact avec les aliments. Pour terminer, pour empêcher que la pâte à pizza ne brûle, je préconise toujours des bûches offrant une chaleur douce et constante.</p>
 				</div>
 			</div>
 		</div>
@@ -148,14 +148,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="bandeau animate fade_in delay-300">
     <div >
         <div class="titre">Contactez-nous&nbsp;!</div>
-        <div class="titre_main">Nous sommes Ã  votre disposition pour toute demande</div>
+        <div class="titre_main">Nous sommes à votre disposition pour toute demande</div>
         <div class="btn">
             <a href="tel:0478674224" class="link lighthover" title="0478 67 42 24">
                 <span>
-                    <img src="images/phone_brown.svg" width="16" height="16" alt="tÃ©lÃ©phone icone">0478&nbsp;67&nbsp;42&nbsp;24
+                    <img src="images/phone_brown.svg" width="16" height="16" alt="téléphone icone">0478&nbsp;67&nbsp;42&nbsp;24
                 </span>
             </a>
-            <a href="contact.php" class="link lighthover" title="Formulaire">
+            <a href="contact.html" class="link lighthover" title="Formulaire">
                 <span>
                     <img src="images/mail_brown.svg" width="16" height="12" alt="courrier icone">Formulaire
                 </span>
@@ -170,30 +170,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrapper wrapper_small animate fade_in delay-300">
 		<div class="bloc_footer coordonnees">
 		  <div class="sous_titre">Julien Boucquiaux</div>
-            <p><span>SiÃ¨ge social</span></p>
+            <p><span>Siège social</span></p>
 			<p>Rue de la logette 8 - 5060 Falisolle</p>
 			<p><a class="phone" href="tel:0478674224" title="0478 67 42 24">0478 67 42 24</a></p>
 			<p><a href="mailto:jul1-b@live.be" class="mail" title="jul1-b@live.be">jul1-b@live.be</a></p>
 			<p><span>Secretariat</span></p>
-			<p>Du lundi au samedi, de 8h Ã  18h</p>
+			<p>Du lundi au samedi, de 8h à 18h</p>
 		</div>
         <div class="bloc_footer">
             <br>
 			<p><span>Point de retrait du self-service</span></p>
-			<p><a href="https://maps.app.goo.gl/YuZFgbcp7sidZCtz7" title="ChaussÃ©e Romaine 2 - 6223 WagnelÃ©e (Fleurus)">ChaussÃ©e Romaine 2 <br> 6223 WagnelÃ©e (Fleurus)</a></p>
+			<p><a href="https://maps.app.goo.gl/YuZFgbcp7sidZCtz7" title="Chaussée Romaine 2 - 6223 Wagnelée (Fleurus)">Chaussée Romaine 2 <br> 6223 Wagnelée (Fleurus)</a></p>
 			<p><span>Horaire du self-service</span></p>
             <p>
-                Lundi : fermÃ© <br>
-                Mardi : de 13h00 Ã  18h00 <br>
-                Mercredi : de 13h00 Ã  18h00 <br>
-                Jeudi : de 13h00 Ã  18h00 <br>
-                Vendredi : fermÃ© <br>
-                Samedi : fermÃ© <br>
-                Dimanche : fermÃ©
+                Lundi : fermé <br>
+                Mardi : de 13h00 à 18h00 <br>
+                Mercredi : de 13h00 à 18h00 <br>
+                Jeudi : de 13h00 à 18h00 <br>
+                Vendredi : fermé <br>
+                Samedi : fermé <br>
+                Dimanche : fermé
             </p>
         </div>
         <div class="qualite">
-            <img src="images/logo_qualite.webp" width="140" height="140" alt="Logo qualitÃ©">
+            <img src="images/logo_qualite.webp" width="140" height="140" alt="Logo qualité">
         </div>
 		<div class="rs">
             <a href="https://www.facebook.com/profile.php?id=100010519084045" target="_blank" title="" class="facebook"></a>
@@ -201,15 +201,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 		<ul class="footer_bottom">
             <li>BE0824.002.726</li>
-            <li><a href="plan.php" title="Plan du site">Plan du site</a></li>
-            <li><a href="//rgpd4.toponweb.be/mentions.php" class="rgpdLink" title="Mentions lÃ©gales" target="_blank">Mentions lÃ©gales</a></li>
+            <li><a href="plan.html" title="Plan du site">Plan du site</a></li>
+            <li><a href="//rgpd4.toponweb.be/mentions.html" class="rgpdLink" title="Mentions légales" target="_blank">Mentions légales</a></li>
             <li><a href="#" class="rgpdOpenCookieSettingsBtn" title="Cookies" target="_blank">Cookies</a></li>
         </ul>
     </div>
-    <a href="https://www.toponweb.be/" title="RÃ©alisÃ© par Toponweb" target="_blank" class="toponweb"><span><img src="images/toponweb.svg" alt="Top On Web"></span></a>
+    
 </footer>
 
-<!-- mentions lÃ©gales -->
+<!-- mentions légales -->
 <style>
 #rgpdBlackOverlay						{ display:block; position:fixed; top:0%; left: 0%; width: 100%; height: 100%; background-color: rgba(0,0,0,.8); z-index: 1000;}
 #rgpdCloseBtn							{ margin:2% auto; width:100px; border-radius:3px; height:40px; color:#000; background:#fff; text-align:center; font:normal 14px/40px Arial; cursor:pointer;}
@@ -312,8 +312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	function rgpd_accept(choice,pixel,fade=true)
 	{
-		$("<div id='setCookieContainer' style='display:none'></div>").insertAfter("#rgpdInsertTarget");
-		$("#setCookieContainer").load("footer.php?rgpdAccept="+choice+"&rgpdAcceptPixel="+pixel+"&nocache=1793433474");
+		try { localStorage.setItem('rgpd_consent', choice ? 'accepted' : 'refused'); } catch(e){}
 		if(fade) $(".alertCookiesContainer,.alertCookies").fadeOut(400);
 	}
 
@@ -326,7 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		$(".alertCookies .rgpdCustom,.rgpdOpenCookieSettingsBtn").click(function(e){
 			$(".alertCookies").remove();
 			e.preventDefault();
-			$("<div class='alertCookiesContainer' style='display:block'><div class='gridCookies'><div class='alertCookies cookieSettings'><p class='alertCookiesTitle'>ParamÃ©trer les cookies</p><div class='rgpdCookieItem'><input type='checkbox' disabled checked /><label>Cookies nÃ©cessaires</label><p>NÃ©cessaires au bon fonctionnement technique du site, ces cookies ne peuvent pas Ãªtre refusÃ©s. Concernant les cookies analytiques, ils nous permettent d'amÃ©liorer la performance du site en mesurant le nombre de visites et les sources de trafic. Les donnÃ©es collectÃ©es sont anonymes.</p></div><div class='rgpdCookieItem'><input type='checkbox' id='acceptPixel' "+(document.cookie.search("acceptPixel=1")>=0 ? "checked" : "")+" /><label for='acceptPixel'>Pixel de suivi</label><p>Le pixel permet aux rÃ©seaux sociaux de suivre votre navigation et de crÃ©er des audiences selon vos intÃ©rÃªts. Il peut Ãªtre refusÃ©.</p></div><div class='alertCookiesActions'><a class='rgpdAccept rgpdSaveSettings' title='Enregistrer mes prÃ©fÃ©rences'>Enregistrer mes prÃ©fÃ©rences</a></div></div></div>").insertAfter("#rgpdInsertTarget");
+			$("<div class='alertCookiesContainer' style='display:block'><div class='gridCookies'><div class='alertCookies cookieSettings'><p class='alertCookiesTitle'>Paramétrer les cookies</p><div class='rgpdCookieItem'><input type='checkbox' disabled checked /><label>Cookies nécessaires</label><p>Nécessaires au bon fonctionnement technique du site, ces cookies ne peuvent pas être refusés. Concernant les cookies analytiques, ils nous permettent d'améliorer la performance du site en mesurant le nombre de visites et les sources de trafic. Les données collectées sont anonymes.</p></div><div class='rgpdCookieItem'><input type='checkbox' id='acceptPixel' "+(document.cookie.search("acceptPixel=1")>=0 ? "checked" : "")+" /><label for='acceptPixel'>Pixel de suivi</label><p>Le pixel permet aux réseaux sociaux de suivre votre navigation et de créer des audiences selon vos intérêts. Il peut être refusé.</p></div><div class='alertCookiesActions'><a class='rgpdAccept rgpdSaveSettings' title='Enregistrer mes préférences'>Enregistrer mes préférences</a></div></div></div>").insertAfter("#rgpdInsertTarget");
 			$(".rgpdSaveSettings").click(function(e){
 				rgpd_accept(1,$("#acceptPixel").is(":checked")?1:0);
 				$("#rgpdBlackOverlay").remove();
@@ -349,7 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 		if(document.cookie.search("acceptCookies=")<0)
 		{
-			$(".alertCookies").delay(500).fadeIn(500);
+			if(!localStorage.getItem("rgpd_consent")) { $(".alertCookies").delay(500).fadeIn(500); } else { $(".alertCookies").hide(); }
 		}
 	} 
 	window.onload = function(e){
@@ -370,10 +369,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="alertCookies">
 	<p class="alertCookiesTitle">Ce site utilise des cookies</p>
-	<p>Nous utilisons des cookies pour assurer le bon fonctionnement du site. Vous pouvez consulter nos <a class="rgpdLink" href="//rgpd4.toponweb.be/mentions.php#cookies" title="Mentions lÃ©gales" target="_blank">mentions lÃ©gales</a> et notre <a class="rgpdLink" href="//rgpd4.toponweb.be/confidentialite.php" title="Politique de confidentialitÃ©" target="_blank">politique de confidentialitÃ©</a> pour plus d'informations.</p>
+	<p>Nous utilisons des cookies pour assurer le bon fonctionnement du site. Vous pouvez consulter nos <a class="rgpdLink" href="//rgpd4.toponweb.be/mentions.php#cookies" title="Mentions légales" target="_blank">mentions légales</a> et notre <a class="rgpdLink" href="//rgpd4.toponweb.be/confidentialite.html" title="Politique de confidentialité" target="_blank">politique de confidentialité</a> pour plus d'informations.</p>
 	<div class="alertCookiesActions">
 		<span title="Accepter" class="rgpdAccept">Accepter les cookies</span>
-		<span title="ParamÃ©trer" class="rgpdCustom">ParamÃ©trer les cookies</span>
+		<span title="Paramétrer" class="rgpdCustom">Paramétrer les cookies</span>
 	</div>
 </div>
 </div>

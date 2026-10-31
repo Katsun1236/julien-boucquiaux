@@ -314,7 +314,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 .footer_bottom li a 				{ color: #fff;}
 .footer_bottom li:after				{ width: 1px; height: 9px; content: ""; position: absolute; right: -13px; top: 5px; background: #7fc957;}
 .footer_bottom li:last-child:after 	{ display: none;}
-.toponweb							{ display: block; z-index: 85; position: fixed; right: 0; bottom: -65px; transition: bottom 400ms ease-in-out;}
+.toponweb { display: none !important; opacity: 0 !important; pointer-events: none !important; }
 .toponweb span						{ width: auto;height:60px; display: block;padding: 20px; background: linear-gradient(to left, #fff 0%, #fff 50%, #7fc957 50%, #7fc957 100%); background-size: 200% 100%; background-position: 100% 0;}
 .toponweb img						{ width: 74px; height: auto; display: block; margin: 0 auto;}
 .toponweb.show						{ bottom: 0;}
@@ -330,7 +330,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 @media (max-width:1200px) {
 .footer .bloc_footer 				{ margin-right: 80px;}
 .footer .bloc_footer.coordonnees    { margin-right: 0;}
-.toponweb                           { position: absolute;}
+.toponweb { display: none !important; opacity: 0 !important; pointer-events: none !important; }
 }
 @media (max-width:1000px) {
 .footer .bloc_footer 				{ display: block; margin: 0;}
