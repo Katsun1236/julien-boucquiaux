@@ -1,19 +1,24 @@
 /**
  * Éditeur Visuel en Direct (WYSIWYG) - Julien Boucquiaux
- * Permet de modifier n'importe quel texte directement sur la page et d'enregistrer les changements.
+ * Accès discret sans bouton public visible.
  */
 (function () {
-    const DEFAULT_PIN = "1234";
+    const HASH = "5088efd7224c059084ef9dea8a933ab91f0d9f82496d1a14f5c217829da5b245";
     const API_URL = "/api/content";
     const STORAGE_KEY = "julien_site_overrides";
     const BANNER_KEY = "julien_top_banner";
     const pageId = window.location.pathname.split("/").pop() || "index.html";
 
     let isEditorActive = false;
-    let modifiedElements = {}; // key -> newHTML
-    let originalElements = {}; // key -> origHTML
+    let modifiedElements = {};
+    let originalElements = {};
 
-    // 1. Initialiser le bandeau d'annonce en haut s'il existe
+    async function sha256(str) {
+        const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+        return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    // 1. Initialiser le bandeau d'annonce
     function initAnnouncementBanner() {
         try {
             const bannerData = JSON.parse(localStorage.getItem(BANNER_KEY) || "null");
@@ -26,11 +31,14 @@
                     document.body.insertBefore(banner, document.body.firstChild);
                 }
                 banner.innerHTML = `<span>📢 ${bannerData.text}</span>`;
+            } else {
+                let banner = document.getElementById("topAnnouncementBanner");
+                if (banner) banner.remove();
             }
         } catch (e) {}
     }
 
-    // 2. Générer une clé stable pour chaque élément textuel
+    // 2. Clé stable pour chaque élément textuel
     function getElementKey(el, index) {
         if (el.id) return `${pageId}#${el.id}`;
         const tag = el.tagName.toLowerCase();
@@ -38,7 +46,7 @@
         return `${pageId}::${parentClass}>${tag}:${index}`;
     }
 
-    // 3. Appliquer les textes sauvegardés dès le chargement de la page
+    // 3. Appliquer les textes sauvegardés
     function applySavedContent(data) {
         if (!data) return;
         const editables = document.querySelectorAll("h1, h2, h3, h4, h5, p, td, th, .titre, .accroche, .label, a.link span");
@@ -50,17 +58,13 @@
         });
     }
 
-    // Charger les modifications (depuis le serveur ou localStorage)
     async function loadContent() {
         initAnnouncementBanner();
-
-        // 1. D'abord depuis le localStorage local pour affichage instantané
         try {
             const local = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
             applySavedContent(local);
         } catch (e) {}
 
-        // 2. Ensuite depuis l'API Netlify Blobs si en ligne
         try {
             const res = await fetch(API_URL);
             if (res.ok) {
@@ -70,9 +74,7 @@
                     applySavedContent(remote);
                 }
             }
-        } catch (e) {
-            // mode hors ligne ou pas encore de backend
-        }
+        } catch (e) {}
     }
 
     // 4. Activer le mode édition en direct
@@ -81,7 +83,6 @@
         isEditorActive = true;
         document.body.classList.add("live-editor-active");
 
-        // Créer la barre d'outils supérieure
         let bar = document.getElementById("liveEditorBar");
         if (!bar) {
             bar = document.createElement("div");
@@ -89,7 +90,7 @@
             bar.className = "live-editor-bar";
             bar.innerHTML = `
                 <div class="live-editor-info">
-                    <span class="live-editor-badge">Mode Édition</span>
+                    <span class="live-editor-badge">Mode Gestion Direct</span>
                     <span class="live-editor-hint">Cliquez sur un texte ou un tarif pour le modifier directement sur la page.</span>
                 </div>
                 <div class="live-editor-actions">
@@ -108,7 +109,6 @@
         }
         bar.style.display = "flex";
 
-        // Rendre les éléments éditables
         const editables = document.querySelectorAll("h1, h2, h3, h4, h5, p, td, th, .titre, .accroche, .label, a.link span, .prix, .col_tarif");
         editables.forEach((el, index) => {
             const key = getElementKey(el, index);
@@ -120,7 +120,6 @@
             el.setAttribute("contenteditable", "true");
             el.setAttribute("spellcheck", "false");
 
-            // Bloquer la navigation sur les liens pendant l'édition
             if (el.tagName === "A" || el.closest("a")) {
                 el.addEventListener("click", (e) => {
                     if (isEditorActive) e.preventDefault();
@@ -132,10 +131,6 @@
                 updateSaveButtonState();
             });
         });
-
-        // Masquer le bouton déclencheur
-        const trigger = document.getElementById("editorTriggerBtn");
-        if (trigger) trigger.style.display = "none";
     }
 
     function updateSaveButtonState() {
@@ -146,12 +141,10 @@
         }
     }
 
-    // 5. Sauvegarder les modifications
     async function saveChanges() {
         const btn = document.getElementById("btnSaveLive");
         if (btn) btn.innerHTML = "⏳ Enregistrement...";
 
-        // Fusionner avec le stockage existant
         let allOverrides = {};
         try {
             allOverrides = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
@@ -160,20 +153,17 @@
         Object.assign(allOverrides, modifiedElements);
         localStorage.setItem(STORAGE_KEY, JSON.stringify(allOverrides));
 
-        // Envoyer à l'API Netlify Blobs si possible
         let savedOnline = false;
         try {
             const res = await fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    pin: sessionStorage.getItem("julien_editor_pin") || DEFAULT_PIN,
+                    auth_hash: sessionStorage.getItem("julien_auth_token") || HASH,
                     overrides: allOverrides,
                 }),
             });
-            if (res.ok) {
-                savedOnline = true;
-            }
+            if (res.ok) savedOnline = true;
         } catch (e) {}
 
         modifiedElements = {};
@@ -186,7 +176,6 @@
         }
     }
 
-    // 6. Annuler les modifications non enregistrées
     function cancelChanges() {
         if (confirm("Voulez-vous annuler vos modifications non enregistrées sur cette page ?")) {
             for (let key in originalElements) {
@@ -202,11 +191,9 @@
         }
     }
 
-    // 7. Quitter le mode édition
     function disableEditor() {
         isEditorActive = false;
         document.body.classList.remove("live-editor-active");
-
         const bar = document.getElementById("liveEditorBar");
         if (bar) bar.style.display = "none";
 
@@ -215,12 +202,8 @@
             el.removeAttribute("contenteditable");
             el.removeAttribute("data-editable");
         });
-
-        const trigger = document.getElementById("editorTriggerBtn");
-        if (trigger) trigger.style.display = "flex";
     }
 
-    // 8. Modifier le bandeau d'alerte / annonce
     function editBanner() {
         const currentData = JSON.parse(localStorage.getItem(BANNER_KEY) || '{"active": false, "text": ""}');
         const action = prompt("Texte du bandeau d'annonce en haut du site (laissez vide pour désactiver) :", currentData.text || "");
@@ -236,18 +219,17 @@
         }
     }
 
-    // 9. Fenêtre popup de connexion (Code PIN)
     function promptPinLogin() {
         const modal = document.createElement("div");
         modal.className = "live-editor-modal-overlay";
         modal.innerHTML = `
             <div class="live-editor-modal">
-                <h3>🛠️ Espace Gestion</h3>
-                <p>Entrez votre code d'accès pour modifier les textes et tarifs en direct :</p>
-                <input type="password" id="editorPinInput" placeholder="Code PIN" maxlength="10" autofocus autocomplete="off">
+                <h3>🔐 Accès Sécurisé</h3>
+                <p>Veuillez entrer le mot de passe d'administration :</p>
+                <input type="password" id="editorPinInput" placeholder="Mot de passe" autofocus autocomplete="off">
                 <div class="live-editor-modal-btns">
                     <button id="btnCancelPin" style="background:#eee;color:#333;">Annuler</button>
-                    <button id="btnConfirmPin" style="background:#7fc957;color:#fff;">Accéder</button>
+                    <button id="btnConfirmPin" style="background:#7fc957;color:#fff;">Déverrouiller</button>
                 </div>
             </div>
         `;
@@ -256,14 +238,15 @@
         const input = document.getElementById("editorPinInput");
         input.focus();
 
-        function handleConfirm() {
-            const entered = input.value.trim();
-            if (entered === DEFAULT_PIN || entered === "julien" || entered === "admin") {
-                sessionStorage.setItem("julien_editor_pin", entered);
+        async function handleConfirm() {
+            const entered = input.value;
+            const hashed = await sha256(entered);
+            if (hashed === HASH) {
+                sessionStorage.setItem("julien_auth_token", hashed);
                 modal.remove();
                 enableEditor();
             } else {
-                alert("❌ Code incorrect. Veuillez réessayer.");
+                alert("❌ Mot de passe incorrect.");
                 input.value = "";
                 input.focus();
             }
@@ -276,35 +259,34 @@
         document.getElementById("btnCancelPin").addEventListener("click", () => modal.remove());
     }
 
-    // 10. Bouton déclencheur flottant
-    function createTriggerButton() {
-        const btn = document.createElement("button");
-        btn.id = "editorTriggerBtn";
-        btn.className = "editor-trigger-btn";
-        btn.title = "Modifier le site en direct";
-        btn.innerHTML = `✏️ <span>Modifier le site</span>`;
-        btn.addEventListener("click", () => {
-            if (sessionStorage.getItem("julien_editor_pin")) {
-                enableEditor();
-            } else {
-                promptPinLogin();
-            }
-        });
-        document.body.appendChild(btn);
-    }
-
-    // Initialisation au chargement
+    // Initialisation
     window.addEventListener("DOMContentLoaded", () => {
         loadContent();
-        createTriggerButton();
 
-        // Activation automatique si ?edit est dans l'URL
-        if (window.location.search.includes("edit")) {
-            if (sessionStorage.getItem("julien_editor_pin")) {
+        // 1. Accès via URL discrète avec ?gestion ou ?edit ou ?admin
+        const hasParam = window.location.search.includes("gestion") || 
+                         window.location.search.includes("edit") || 
+                         window.location.search.includes("admin");
+
+        if (hasParam) {
+            if (sessionStorage.getItem("julien_auth_token") === HASH) {
                 enableEditor();
             } else {
                 promptPinLogin();
             }
         }
+
+        // 2. Raccourci clavier secret : Ctrl + Shift + E
+        window.addEventListener("keydown", (e) => {
+            if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "e") {
+                e.preventDefault();
+                if (sessionStorage.getItem("julien_auth_token") === HASH) {
+                    if (isEditorActive) disableEditor();
+                    else enableEditor();
+                } else {
+                    promptPinLogin();
+                }
+            }
+        });
     });
 })();

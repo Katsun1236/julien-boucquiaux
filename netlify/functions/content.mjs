@@ -1,5 +1,7 @@
 import { getStore } from "@netlify/blobs";
 
+const HASH = "5088efd7224c059084ef9dea8a933ab91f0d9f82496d1a14f5c217829da5b245";
+
 export default async (req, context) => {
   const store = getStore("julien-content");
 
@@ -19,10 +21,10 @@ export default async (req, context) => {
   if (req.method === "POST") {
     try {
       const body = await req.json();
-      const pin = body.pin;
-      // Simple verification
-      if (pin !== "1234" && pin !== "julien") {
-        return new Response(JSON.stringify({ error: "Code PIN incorrect" }), { status: 401 });
+      const auth_hash = body.auth_hash;
+
+      if (auth_hash !== HASH) {
+        return new Response(JSON.stringify({ error: "Accès refusé" }), { status: 401 });
       }
 
       const overrides = body.overrides || {};

@@ -198,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				else if($("input[name='txtEmail']").length) rgpdEmail=$("input[name='txtEmail']").val();
 				else if($("input[name='Email']").length) rgpdEmail=$("input[name='Email']").val();
 				else if($("input[name='email_customer']").length) rgpdEmail=$("input[name='email_customer']").val();
-				$.get("//rgpd4.toponweb.be/save-consent.php?domain=www.julien-boucquiaux.be&url=%2Fcontact.php&email="+rgpdEmail+"&hash=69b5617435f21e3ffa476c2304622bba");
+				// Consentement RGPD
 				return true;
 			}
 		});
@@ -210,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		{
 		   var script = document.createElement('script');
 		   script.type = "text/javascript";
-		   script.src = "//rgpd4.toponweb.be/js/jquery.min.js";
+		   script.src = "js/jquery.min.js";
 		   script.onload = function() { rgpd_form_init();};
 		   document.getElementsByTagName('head')[0].appendChild(script);
 		}
@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <div id="rgpdForm">
-    <input type="checkbox" name="rgpdFormAcceptBox" id="rgpdFormAcceptBox" value="1" /> <label for="rgpdFormAcceptBox">En cochant cette case et en soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées dans le cadre de ma demande et je confirme avoir pris connaissance de la <a class='rgpdLink' href='//rgpd4.toponweb.be/confidentialite.php' title='Politique de confidentialité' target='_blank'>Politique de Confidentialité</a>.</label>
+    <input type="checkbox" name="rgpdFormAcceptBox" id="rgpdFormAcceptBox" value="1" /> <label for="rgpdFormAcceptBox">En cochant cette case et en soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées dans le cadre de ma demande et je confirme avoir pris connaissance de la <a class='rgpdLink' href="confidentialite.html" title='Politique de confidentialité' target='_blank'>Politique de Confidentialité</a>.</label>
 </div>
 <!-- RGPD FORM END -->                                    </div>
                                     <div class="btn_sub">
@@ -275,7 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<ul class="footer_bottom">
             <li>BE0824.002.726</li>
             <li><a href="plan.html" title="Plan du site">Plan du site</a></li>
-            <li><a href="//rgpd4.toponweb.be/mentions.html" class="rgpdLink" title="Mentions légales" target="_blank">Mentions légales</a></li>
+            <li><a href="mentions-legales.html" class="rgpdLink" title="Mentions légales" target="_blank">Mentions légales</a></li>
             <li><a href="#" class="rgpdOpenCookieSettingsBtn" title="Cookies" target="_blank">Cookies</a></li>
         </ul>
     </div>
@@ -429,7 +429,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		{
 		   var script = document.createElement('script');
 		   script.type = "text/javascript";
-		   script.src = "//rgpd4.toponweb.be/js/jquery.min.js";
+		   script.src = "js/jquery.min.js";
 		   script.onload = function() { rgpd_init();};
 		   document.getElementsByTagName('head')[0].appendChild(script);
 		}
@@ -442,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="alertCookies">
 	<p class="alertCookiesTitle">Ce site utilise des cookies</p>
-	<p>Nous utilisons des cookies pour assurer le bon fonctionnement du site. Vous pouvez consulter nos <a class="rgpdLink" href="//rgpd4.toponweb.be/mentions.php#cookies" title="Mentions légales" target="_blank">mentions légales</a> et notre <a class="rgpdLink" href="//rgpd4.toponweb.be/confidentialite.html" title="Politique de confidentialité" target="_blank">politique de confidentialité</a> pour plus d'informations.</p>
+	<p>Nous utilisons des cookies pour assurer le bon fonctionnement du site. Vous pouvez consulter nos <a class="rgpdLink" href="mentions-legales.html" title="Mentions légales" target="_blank">mentions légales</a> et notre <a class="rgpdLink" href="confidentialite.html" title="Politique de confidentialité" target="_blank">politique de confidentialité</a> pour plus d'informations.</p>
 	<div class="alertCookiesActions">
 		<span title="Accepter" class="rgpdAccept">Accepter les cookies</span>
 		<span title="Paramétrer" class="rgpdCustom">Paramétrer les cookies</span>
