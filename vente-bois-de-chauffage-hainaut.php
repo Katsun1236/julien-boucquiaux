@@ -6,7 +6,7 @@
 <meta name="description" content="Chauffez-vous avec nos bois de chauffage locaux et durables, et optez pour un service de qualité et une livraison rapide."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 	
-<link rel="icon" href="favicon.ico">
+
 <link property rel="stylesheet" href="css/animation.css">
 <link property rel="stylesheet" href="css/blocgrid.css">
 <link property rel="stylesheet" href="css/global.css">

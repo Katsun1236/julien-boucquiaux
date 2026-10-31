@@ -6,7 +6,7 @@
         <meta name="description" content="N'hésitez pas à me contacter via le formulaire en ligne pour passer votre commande ou pour obtenir des renseignements supplémentaires !"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 
-        <link rel="icon" href="favicon.ico">
+        
         <link property rel="stylesheet" href="css/animation.css">
         <link property rel="stylesheet" href="css/blocgrid.css">
         <link property rel="stylesheet" href="css/global.css">

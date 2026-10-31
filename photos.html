@@ -6,7 +6,7 @@
         <meta name="description" content="Je mets à votre disposition différentes images illustrant mes services afin de vous donner une meilleure idée de mes prestations."/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 
-        <link rel="icon" href="favicon.ico">
+        
         <link property rel="stylesheet" href="css/slick.css">
         <link property rel="stylesheet" href="css/animation.css">
         <link property rel="stylesheet" href="css/blocgrid.css">

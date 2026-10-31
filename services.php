@@ -6,7 +6,7 @@
         <meta name="description" content="Je vous garantis des produits et services de première qualité autour de Fleurus : livraison à domicile, self-service et approvisionnement en bois de chauffage pour les particuliers."/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 
-        <link rel="icon" href="favicon.ico">
+        
         <link property rel="stylesheet" href="css/slick.css">
         <link property rel="stylesheet" href="css/animation.css">
         <link property rel="stylesheet" href="css/blocgrid.css">

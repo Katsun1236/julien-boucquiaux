@@ -6,7 +6,7 @@
 <meta name="description" content="Faites confiance à un expert pour votre approvisionnement en bois pour fours à pizza et obtenez une cuisson parfaite de tous vos plats."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 	
-<link rel="icon" href="favicon.ico">
+
 <link property rel="stylesheet" href="css/slick.css">
 <link property rel="stylesheet" href="css/animation.css">
 <link property rel="stylesheet" href="css/blocgrid.css">

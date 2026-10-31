@@ -6,7 +6,7 @@
 <meta name="description" content="Découvrez le prix du bois de chauffage, de pizzeria et de mes bûches compressées. Profitez de bois 100% belge, de qualité, toujours sec et prêt à l'emploi."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 
-<link rel="icon" href="favicon.ico">
+
 <link property rel="stylesheet" href="css/slick.css">
 <link property rel="stylesheet" href="css/animation.css">
 <link property rel="stylesheet" href="css/blocgrid.css">
@@ -192,11 +192,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </tbody>
                                         </table> 
                                                                         <div class = "bloc_texte animate fade_in delay-300">
-                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
-<div class="label">Quantit&eacute; minimale de livraison</div>
-<ul class="ul_list">
-<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
-<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
+
+<div class="label">Quantit&eacute; minimale de livraison</div>
+
+<ul class="ul_list">
+
+<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
+
+<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+
 </ul>                                </div>
                             </div>
                         </div>
@@ -265,11 +270,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </tbody>
                                         </table> 
                                                                         <div class = "bloc_texte animate fade_in delay-300">
-                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
-<div class="label">Quantit&eacute; minimale de livraison</div>
-<ul class="ul_list">
-<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
-<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
+
+<div class="label">Quantit&eacute; minimale de livraison</div>
+
+<ul class="ul_list">
+
+<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
+
+<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+
 </ul>                                </div>
                             </div>
                         </div>
@@ -330,11 +340,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </tbody>
                                         </table> 
                                                                         <div class = "bloc_texte animate fade_in delay-300">
-                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
-<div class="label">Quantit&eacute; minimale de livraison</div>
-<ul class="ul_list">
-<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
-<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
+
+<div class="label">Quantit&eacute; minimale de livraison</div>
+
+<ul class="ul_list">
+
+<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
+
+<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+
 </ul>                                </div>
                             </div>
                         </div>
@@ -387,11 +402,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </tbody>
                                     </table> 
                                                                     <div class = "bloc_texte animate fade_in delay-300">
-                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
-<div class="label">Quantit&eacute; minimale de livraison</div>
-<ul class="ul_list">
-<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
-<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+                                    <p>Tous les prix sont entendus livraison comprise. Les frais de livraison sont donc offerts.<br />Toute commande est livr&eacute;e en une seule fois, <strong>au prix applicable le jour de la commande</strong></p>
+
+<div class="label">Quantit&eacute; minimale de livraison</div>
+
+<ul class="ul_list">
+
+<li>Dans un rayon de 10 km autour du d&eacute;p&ocirc;t et de Falisolle, minimum 3 st&egrave;res</li>
+
+<li>Au del&agrave; de ce rayon, minimum 5 st&egrave;res</li>
+
 </ul>                                </div>
                             </div>
                         </div>
