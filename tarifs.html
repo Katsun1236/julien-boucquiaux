@@ -5,6 +5,13 @@
 <title>Le prix de mes bois de chauffage, de pizzeria & buches compressées</title>
 <meta name="description" content="Découvrez le prix du bois de chauffage, de pizzeria et de mes bûches compressées. Profitez de bois 100% belge, de qualité, toujours sec et prêt à l'emploi."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <!-- Local file fallback -->
+    <link rel="icon" href="favicon.ico">
 
 
 <link property rel="stylesheet" href="css/slick.css">

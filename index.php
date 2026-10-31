@@ -5,12 +5,14 @@
         <title>Votre fournisseur de bois de chauffage et pellets à Fleurus</title>
         <meta name="description" content="Vente et livraison de bois de chauffage et pellets à Fleurus. Profitez d'un service fiable en Brabant Wallon et dans le Hainaut pour un combustible de qualité."/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <!-- Local file fallback -->
+    <link rel="icon" href="favicon.ico">
         <meta name="google-site-verification" content="BsEDjdpQiyMIKCfwGKaYWX3ryeDhNjgTfm-fRYXF09w" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="icon" type="image/svg+xml" href="favicon.svg">
-        <link rel="apple-touch-icon" href="favicon.svg">	
-        
         <link property rel="stylesheet" href="css/animation.css">
         <link property rel="stylesheet" href="css/slick.css">
         <link property rel="stylesheet" href="css/blocgrid.css">

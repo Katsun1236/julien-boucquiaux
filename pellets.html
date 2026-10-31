@@ -5,6 +5,13 @@
 <title>Pellet PAULS en vente par sacs de 15kg chez Julien Boucquiaux </title>
 <meta name="description" content="Dans la région de Fleurus, Julien Boucquiaux vous propose un choix 100 % belge avec les pellets PAULS disponibles en sacs de 15kg, et palettes de 70 sacs."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <!-- Local file fallback -->
+    <link rel="icon" href="favicon.ico">
 	
 
 <link property rel="stylesheet" href="css/slick.css">

@@ -5,6 +5,13 @@
 <title>Des buches compressées de qualité provenant de Fleurus</title>
 <meta name="description" content="Plus propres, écologiques et pratiques, optez pour des bûches compressées garantissant une combustion plus longue et plus stable que le bois traditionnel."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
+    <!-- Local file fallback -->
+    <link rel="icon" href="favicon.ico">
 	
 
 <link property rel="stylesheet" href="css/slick.css">
