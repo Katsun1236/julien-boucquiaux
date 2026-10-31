@@ -20,7 +20,8 @@
         <link property rel="stylesheet" href="css/page.css">
         <link property rel="stylesheet" href="css/formulaire.css">
 
-    </head>
+        <link rel="stylesheet" href="css/live-editor.css">
+</head>
 
     <body id="contact">
         <!-- Google Tag Manager -->
@@ -494,5 +495,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 updateDimensionEtQuantite();
             });
         </script>
-    </body>
+        <script src="js/live-editor.js"></script>
+</body>
 </html>

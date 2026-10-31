@@ -19,6 +19,7 @@
 <link property rel="stylesheet" href="css/global.css">
 <link property rel="stylesheet" href="css/page.css">
 
+    <link rel="stylesheet" href="css/live-editor.css">
 </head>
 
 <body>
@@ -414,5 +415,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+    <script src="js/live-editor.js"></script>
 </body>
 </html>

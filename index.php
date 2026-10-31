@@ -18,7 +18,8 @@
         <link property rel="stylesheet" href="css/blocgrid.css">
         <link property rel="stylesheet" href="css/global.css">
         <link property rel="stylesheet" href="css/home.css">
-    </head>
+        <link rel="stylesheet" href="css/live-editor.css">
+</head>
 
     <body>
         <!-- Google Tag Manager -->
@@ -527,5 +528,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 $(this).parents('.morecontent').find('.link-plus').show();
             });
         </script>
-    </body>
+        <script src="js/live-editor.js"></script>
+</body>
 </html>

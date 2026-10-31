@@ -21,7 +21,8 @@
         <link property rel="stylesheet" href="css/page.css">
         <link property rel="stylesheet" href="css/galerie.css">
 
-    </head>
+        <link rel="stylesheet" href="css/live-editor.css">
+</head>
 
     <body>
         <!-- Google Tag Manager -->
@@ -353,5 +354,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
-    </body>
+        <script src="js/live-editor.js"></script>
+</body>
 </html>

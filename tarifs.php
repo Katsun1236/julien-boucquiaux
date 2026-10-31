@@ -20,6 +20,7 @@
 <link property rel="stylesheet" href="css/global.css">
 <link property rel="stylesheet" href="css/page.css">
 
+    <link rel="stylesheet" href="css/live-editor.css">
 </head>
 
 <body>
@@ -819,5 +820,6 @@ $(document).ready(function() {
 });            
             
         </script>
-    </body>
+        <script src="js/live-editor.js"></script>
+</body>
 </html>

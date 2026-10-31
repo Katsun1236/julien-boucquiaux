@@ -1,0 +1,235 @@
+/* Styles du Mode Édition en direct - Julien Boucquiaux */
+
+/* Bouton flottant d'activation */
+.editor-trigger-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #7fc957;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.editor-trigger-btn:hover {
+    background: #6bb345;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Barre d'outils supérieure du mode édition */
+.live-editor-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #232220;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 100000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    font-family: 'Montserrat', sans-serif;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.live-editor-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.live-editor-badge {
+    background: #7fc957;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.live-editor-hint {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.live-editor-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.live-editor-btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.live-editor-btn-save {
+    background: #7fc957;
+    color: #fff;
+}
+.live-editor-btn-save:hover {
+    background: #6bb345;
+}
+
+.live-editor-btn-banner {
+    background: #f39c12;
+    color: #fff;
+}
+.live-editor-btn-banner:hover {
+    background: #d68910;
+}
+
+.live-editor-btn-cancel {
+    background: #444;
+    color: #eee;
+}
+.live-editor-btn-cancel:hover {
+    background: #555;
+}
+
+.live-editor-btn-exit {
+    background: transparent;
+    color: #bbb;
+    border: 1px solid #555;
+}
+.live-editor-btn-exit:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Éléments éditables */
+body.live-editor-active {
+    margin-top: 60px !important;
+}
+
+body.live-editor-active [data-editable="true"] {
+    transition: outline 0.2s ease, background-color 0.2s ease;
+    cursor: text !important;
+}
+
+body.live-editor-active [data-editable="true"]:hover {
+    outline: 2px dashed #7fc957 !important;
+    outline-offset: 3px;
+    background-color: rgba(127, 201, 87, 0.08) !important;
+}
+
+body.live-editor-active [data-editable="true"]:focus {
+    outline: 2px solid #7fc957 !important;
+    outline-offset: 3px;
+    background-color: rgba(127, 201, 87, 0.15) !important;
+}
+
+/* Modal Code PIN */
+.live-editor-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100001;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.live-editor-modal {
+    background: #fff;
+    width: 380px;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #222;
+}
+
+.live-editor-modal h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #2e2621;
+}
+
+.live-editor-modal p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.live-editor-modal input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+}
+
+.live-editor-modal input:focus {
+    outline: none;
+    border-color: #7fc957;
+}
+
+.live-editor-modal-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.live-editor-modal-btns button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Bandeau d'annonce modifiable */
+.top-announcement-banner {
+    background: #7fc957;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
