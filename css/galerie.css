@@ -1,0 +1,82 @@
+.cat-galerie 						{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 30px;}
+.cat-galerie .item a img 			{ width: 100%; height: auto; display:block;}
+.cat-galerie .item a 				{ position: relative;}
+.cat-galerie .item a .caption		{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 50%); display: grid; align-items: end; }
+.cat-galerie .item a .caption .sous_titre { color: #fff; padding: 30px; font-size: 22px; width: 100%; background: url("../images/arrow_white.svg") calc(100% - 30px) 50% no-repeat; transition: all 300ms ease-in-out;}
+
+@media (min-width:1201px) {
+.cat-galerie .item a:hover .caption .sous_titre	{ background-position: calc(100% - 60px) 50%;}
+}
+@media (max-width:1100px) {
+.cat-galerie 						{ grid-template-columns:repeat(2,1fr); }
+.cat-galerie .item a .caption .sous_titre { padding: 5vw; font-size: 20px; background-position: calc(100% - 5vw) 50%;}
+}
+@media (max-width:700px) {
+.cat-galerie 						{ grid-template-columns:1fr; }
+.cat-galerie .item a .caption .sous_titre { padding: 7.5vw; font-size: 18px; background-position: calc(100% - 7.5vw) 50%;}
+}
+
+
+
+/***** galerie *****/
+.details_listing					{ margin: 60px auto; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 30px; font-size: 0; line-height: 0; letter-spacing: 0;}
+.details_listing .item 				{ display: block; overflow: hidden; cursor: url(../images/loupe.svg), auto;}
+.details_listing .item:after		{ width: 100%; height: 100%; opacity: 0; position: absolute; left: 0; top: 0; content: "";}
+.details_listing .item img			{ width: 100%; height: auto; display: block; transition: all 300ms ease-in-out;}
+
+@media (min-width:1201px) {
+.details_listing .item:hover:after	{ opacity: 1;}
+.details_listing .item:hover img    { filter: brightness(0.7);}
+}
+@media (max-width:1400px) {
+.details_listing 					{ padding: 0;}
+}
+@media (max-width:1200px) {
+.details_listing					{ margin: 50px auto; grid-template-columns: 1fr 1fr; grid-gap: 20px; }
+}
+@media (max-width:700px) {
+.details_listing					{ margin: 30px auto; grid-template-columns: 1fr; grid-gap: 15px; }
+}
+
+
+
+
+
+/***** custom fancybox *****/
+.fancybox-bg									{ background: #291911;}
+.fancybox-is-open .fancybox-bg					{ opacity: 1;}
+.fancybox-button,
+.fancybox-infobar__body 						{ background: none; color: #fff; font: 400 14px/60px "Poppins"; letter-spacing: 0.8px;}
+.fancybox-infobar 							    { top: 30px; left: auto; right: 90px; margin-left: 0;}
+.fancybox-button--right     				    { display: none;}
+.fancybox-button--left      				    { display: none;}
+.fancybox-toolbar 								{ top: 30px; right: 30px; opacity: 1!important;}
+.fancybox-show-nav .fancybox-arrow 				{ opacity: 1; transition: all 400ms ease-in-out;}
+.fancybox-button--close 						{ width: 54px; height: 54px; background: #7fc957; transition: all 400ms ease-in-out;}
+.fancybox-button--close:before					{ width: 24px; height: 2px; left: calc(50% - 12px); top: calc(50% - 1px); background: #fff;}
+.fancybox-button--close:after					{ width: 24px; height: 2px; left: calc(50% - 12px); top: calc(50% - 1px); background: #fff;}
+.fancybox-arrow 								{ width: 60px; height: 60px; background: url("../images/arrow_white.svg") 54% 50% no-repeat #7fc957; margin-top: -40px; }
+.fancybox-arrow:after							{ display: none;}
+.fancybox-arrow--right 							{ right: 30px;}
+.fancybox-arrow--left 							{ left: 30px;}
+
+@media (min-width:1201px) { 
+.fancybox-button:hover:not([disabled]) 			{ background: #555;} 
+.fancybox-button--close:hover:before			{ background: #fff;}
+.fancybox-button--close:hover:after				{ background: #fff;}
+.fancybox-arrow:hover:not([disabled])  			{ opacity: 0.5;}
+}
+@media (max-width:1200px) { 
+.fancybox-arrow			 						{ border: none;}
+}
+@media (max-width:600px) { 
+.fancybox-button,
+.fancybox-infobar__body 						{ line-height: 40px;}
+.fancybox-toolbar 								{ top: 0; right: 0;}
+.fancybox-button--close 						{ width: 46px; height: 46px;}
+.fancybox-button--close:before					{ width: 20px; left: calc(50% - 10px);}
+.fancybox-button--close:after					{ width: 20px; left: calc(50% - 10px);}
+.fancybox-arrow 								{ width: 40px; height: 50px; margin-top: -25px; background-size: 25% auto;}
+.fancybox-arrow--right 							{ right: 0;}
+.fancybox-arrow--left 							{ left: 0;}
+} 

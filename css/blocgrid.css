@@ -1,0 +1,28 @@
+/***** bloc grid *****/
+.bloc_grid	                        { display: grid; grid-template-columns: 1fr 1fr; align-items: center; position: relative; margin: 95px 0;}
+.bloc_grid.align_top                { align-items: start;}
+.bloc_grid .photo					{ position: relative; line-height: 0;}
+.bloc_grid .photo img 				{ width: 100%; height: auto; object-fit: cover; display: block; position: relative; z-index: 10;}
+.bloc_grid .texte					{ position: relative; padding-left: 80px;}
+.bloc_grid .texte :last-child 		{ margin-bottom: 0;}
+.bloc_grid p               			{ margin-bottom: 15px;}
+.bloc_grid .link					{ margin-top: 10px;}
+.bloc_grid.reverse .texte			{ grid-area: 1 / 1; padding: 0 80px 0 0;}
+.bloc_grid.reverse .photo        	{ grid-area: 1 / 2;}
+
+@media (max-width:1200px) { 
+.bloc_grid	                        { margin: 100px 0;}
+.bloc_grid .texte					{ padding-left: 60px;}
+.bloc_grid.reverse .texte			{ padding: 0 60px 0 0;}
+}
+@media (max-width:1000px) { 
+.bloc_grid	                        { grid-template-columns: 1fr; margin: 80px 0; gap: 60px;}
+.bloc_grid.reverse .texte,
+.bloc_grid .texte					{ padding: 0;}
+.bloc_grid.reverse .texte			{ grid-area: 2;}
+.bloc_grid.reverse .photo        	{ grid-area: 1;}
+}
+@media (max-width:700px) { 
+.bloc_grid	                        { margin: 40px 0; grid-gap: 30px;}
+.bloc_grid p               			{ margin-bottom: 10px;}
+}
