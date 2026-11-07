@@ -65,16 +65,22 @@
             applySavedContent(local);
         } catch (e) {}
 
-        try {
-            const res = await fetch(API_URL);
-            if (res.ok) {
-                const remote = await res.json();
-                if (remote && Object.keys(remote).length > 0) {
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(remote));
-                    applySavedContent(remote);
+        const hasParam = window.location.search.includes("gestion") || 
+                         window.location.search.includes("edit") || 
+                         window.location.search.includes("admin") ||
+                         sessionStorage.getItem("julien_auth_token");
+        if (hasParam) {
+            try {
+                const res = await fetch(API_URL).catch(() => null);
+                if (res && res.ok) {
+                    const remote = await res.json();
+                    if (remote && Object.keys(remote).length > 0) {
+                        localStorage.setItem(STORAGE_KEY, JSON.stringify(remote));
+                        applySavedContent(remote);
+                    }
                 }
-            }
-        } catch (e) {}
+            } catch (e) {}
+        }
     }
 
     // 4. Activer le mode édition en direct

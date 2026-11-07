@@ -20,7 +20,7 @@ $(document).ready(function() {
         oldScrollY = window.scrollY;
     }
 	
-	// menu fixe et logo tow //
+	// menu fixe //
 	function checkScroll()
 	{
 		var posScroll = $(document).scrollTop();
@@ -29,8 +29,8 @@ $(document).ready(function() {
 			$('body').addClass('sticky')
 		else
 			$('body').removeClass('sticky')
+	}
 
-		
     $(window).scroll(function(){
 		checkScroll();
 	});
@@ -94,7 +94,6 @@ $(document).ready(function() {
 		return false;
 	});
 
-
 });
 
 
@@ -113,18 +112,20 @@ $(document).ready(function() {
 	  };
 })(jQuery);
 
-$(".animate").each(function(i, el) {
-	var el = $(el);
-	if (el.visible(true)) {
-		el.addClass("play"); 
-	}
-});
-
-$(window).scroll(function(event) {
+function triggerAnimations() {
 	$(".animate").each(function(i, el) {
 		var el = $(el);
 		if (el.visible(true)) {
 			el.addClass("play"); 
 		}
 	});
+}
+
+$(document).ready(function() {
+	triggerAnimations();
+	setTimeout(triggerAnimations, 200);
+});
+
+$(window).scroll(function(event) {
+	triggerAnimations();
 });
