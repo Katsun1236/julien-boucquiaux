@@ -1,4 +1,4 @@
-/***** fonts et reset *****/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body, ul, li, ol, form, h1, h2, h3, h4, h5, h6, div, span, p { padding:0; margin:0; border:0; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; text-size-adjust: none;}
 article, aside, dialog ,figcaption, figure, footer, header, hgroup, main, nav, section { display: block;}  
@@ -18,13 +18,13 @@ main 								{ position: relative;}
 *, ::before, ::after                { box-sizing: border-box; margin: 0; padding: 0;}
 
 
-/***** scollbar *****/
+
 ::-webkit-scrollbar 				{ width: 6px; height: 6px; background-color: #141b21;}
 ::-webkit-scrollbar-thumb			{ background-color: #7fc957;}
 
 
 
-/***** transition *****/
+
 @media (min-width:1201px) {
 .link, .slick-arrow, :before, :after, a, a span, .sub { transition: all 400ms ease-in-out;}
 }
@@ -32,7 +32,7 @@ main 								{ position: relative;}
 body                                { font-size: 13px; line-height: 28px;}
 }
 
-/***** class *****/
+
 .wrapper                            { width: 90vw; max-width: 1200px; margin: 0 auto; position: relative;}
 .wrapper_large                      { width: 90vw; max-width: 1800px; margin: 0 auto; position: relative;}
 @media (max-width:600px) {
@@ -89,7 +89,7 @@ body                                { font-size: 13px; line-height: 28px;}
 }
 
 
-/***** liens *****/
+
 p a, .bloc_texte p a, .ul_list a    { color: #7fc957; border-bottom: 1px solid transparent; }
 
 @media (min-width:1201px) {
@@ -98,7 +98,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 
 
 
-/***** pop-up-info *****/
+
 .popup_info     				        { background: #fff; color: #000; padding: 40px; position: fixed; right: 3.5vw; bottom: 3.5vw; z-index: 950; width: 460px; text-align: center; display: none; box-shadow: 0px 0px 50px 0px rgba(41,25,17,0.05); }
 .popup_info .sous_titre                 { color: #7fc957; font-size: 22px; text-transform: uppercase; font-weight: 800;}
 .popup_info p                           { margin-bottom: 0; font-weight: 500;}
@@ -108,7 +108,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 .popup_info_close:hover                 { background-color: #7fc957;}
 }
 @media (max-width:1200px) {
-.popup_info                             { /*width: 100%;*/ /*position: relative; left: auto; bottom: auto; */margin: 70px 0; padding: 30px 5vw; }
+.popup_info                             {  margin: 70px 0; padding: 30px 5vw; }
 .popup_info .sous_titre                 { margin-bottom: 5px;}
 }
 @media (max-width:1000px) {
@@ -121,13 +121,13 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 
 
 
-/***** header - menu *****/
+
 .header 		                    { width: 100%; font-size: 0; line-height: 0;  position: fixed; left: 0; top: 0; z-index: 100; transition: all 400ms ease-in-out; display: block; text-align: right; background-color: #291911;}
 .header .logo                       { font-size: 0; letter-spacing: 0; text-align: left; position: absolute; left: 0; top: 40px; transform-origin: left; z-index: 99;}
 .header .logo img                   { display: inline-block; vertical-align: middle; margin-right: 15px;}
 .header .logo span                  { display: inline-block; vertical-align: middle; text-transform: uppercase; color: #fff; font: 700 20px/1.2 "Montserrat";}
 
-/***** menu *****/
+
 .header_nav							{ z-index: 50;padding-right: 0}
 .header_nav .menu					{ position: relative;}	
 .header_nav .menu li				{ display: inline-block; vertical-align: middle; position: relative; margin-left: 35px;}	
@@ -238,7 +238,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 }
 
 
-/***** bandeau *****/
+
 .bandeau                            { text-align: center; color: #fff; background: #f0e8e0; font: 400 22px/30px "Montserrat"; padding: 65px 0 70px; margin: 100px auto}
 .bandeau .titre_main                { color: #291911; font-size: 20px; line-height: 30px; margin-bottom: 25px;}
 .bandeau p                          { margin-bottom: 20px;}
@@ -259,7 +259,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 }
 
 
-/***** table plus *****/
+
 .table_plus 						{ position: relative; margin: 30px 0 50px;}
 .table_plus>a                       { color: #cfb18c;}
 .table_plus .item                   { text-align: left;} 
@@ -289,7 +289,7 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 
 
 
-/***** footer*****/
+
 .footer								{ width: 100%; position: relative; padding-top: 90px; background:#291911; color: #fff; font-size: 0;}
 .footer .qualite      				{ position: absolute; top: 90px; right: 0;}
 .footer .bloc_footer 				{ display: inline-block; vertical-align: top; line-height: 30px;}
@@ -314,10 +314,10 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 .footer_bottom li a 				{ color: #fff;}
 .footer_bottom li:after				{ width: 1px; height: 9px; content: ""; position: absolute; right: -13px; top: 5px; background: #7fc957;}
 .footer_bottom li:last-child:after 	{ display: none;}
-.toponweb { display: none !important; opacity: 0 !important; pointer-events: none !important; }
-.toponweb span						{ width: auto;height:60px; display: block;padding: 20px; background: linear-gradient(to left, #fff 0%, #fff 50%, #7fc957 50%, #7fc957 100%); background-size: 200% 100%; background-position: 100% 0;}
-.toponweb img						{ width: 74px; height: auto; display: block; margin: 0 auto;}
-.toponweb.show						{ bottom: 0;}
+
+
+
+
 
 @media (min-width:1201px) {
 .footer .bloc_footer p a:not(.link):hover,
@@ -325,12 +325,12 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 .footer_bottom li a:hover			{ color: #7fc957;}
 .footer	.rs .facebook:hover			{ background: url(../images/facebook_brown.svg) 50% no-repeat #fff;}
 .footer	.rs .scroll:hover		    { background: url(../images/scrolltop_brown.svg) center no-repeat #fff;}
-.toponweb:hover span				{ background-position: 0 0;}
+
 }
 @media (max-width:1200px) {
 .footer .bloc_footer 				{ margin-right: 80px;}
 .footer .bloc_footer.coordonnees    { margin-right: 0;}
-.toponweb { display: none !important; opacity: 0 !important; pointer-events: none !important; }
+
 }
 @media (max-width:1000px) {
 .footer .bloc_footer 				{ display: block; margin: 0;}
@@ -349,5 +349,5 @@ p a:hover, .bloc_texte p a:hover, .ul_list a:hover { color: #7fc957; border-colo
 .footer_bottom 	 					{ text-align: left; margin-top: 40px; padding: 0 0 30px;}
 .footer_bottom li 					{ display: block; margin-right: 0; line-height: 25px; font-size: 10px;}
 .footer_bottom li:after				{ display: none;}
-.toponweb span                      { background: #fff;}
+
 }

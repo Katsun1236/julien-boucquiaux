@@ -30,11 +30,7 @@ $(document).ready(function() {
 		else
 			$('body').removeClass('sticky')
 
-		if(posScroll>160) 
-			$('.toponweb').addClass('show')
-		else
-			$('.toponweb').removeClass('show')
-	}
+		
     $(window).scroll(function(){
 		checkScroll();
 	});
