@@ -2,8 +2,8 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Découvrez mes services d'expert en bois autour de Fleurus</title>
-        <meta name="description" content="Je vous garantis des produits et services de première qualité autour de Fleurus : livraison à domicile, self-service et approvisionnement en bois de chauffage pour les particuliers."/>
+        <title>Livraison de bois & Dépôt Self-service | Fleurus & alentours</title>
+        <meta name="description" content="Services de livraison de bois de chauffage à domicile (Hainaut, Brabant Wallon) et enlèvement direct en self-service à notre dépôt de Wagnelée."/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">

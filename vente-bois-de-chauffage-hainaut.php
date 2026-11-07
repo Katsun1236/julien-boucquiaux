@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Achat et vente de bois de chauffage autour de Fleurus</title>
-<meta name="description" content="Chauffez-vous avec nos bois de chauffage locaux et durables, et optez pour un service de qualité et une livraison rapide."/>
+<title>Vente de bois de chauffage en vrac et palette | Hainaut & Fleurus</title>
+<meta name="description" content="Achetez votre bois de chauffage fendu et sec en vrac ou sur palette. Bûches de 25cm, 33cm, 40cm et 50cm avec livraison dans le Hainaut et Brabant Wallon."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">

@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Du bois de pizzeria de qualité et 100% local à Fleurus</title>
-<meta name="description" content="Faites confiance à un expert pour votre approvisionnement en bois pour fours à pizza et obtenez une cuisson parfaite de tous vos plats."/>
+<title>Bois de cuisson pour Pizzeria et Four à bois | Julien Boucquiaux</title>
+<meta name="description" content="Fournisseur de bois spécial pour pizzerias et restaurants. Bois dur sec et fendu garantissant une flamme propre et une température constante."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">

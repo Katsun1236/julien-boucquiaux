@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Votre fournisseur de bois de chauffage et pellets à Fleurus</title>
+        <title>Julien Boucquiaux | Bois de chauffage sec & Pellets à Fleurus</title>
         <meta name="description" content="Vente et livraison de bois de chauffage et pellets à Fleurus. Profitez d'un service fiable en Brabant Wallon et dans le Hainaut pour un combustible de qualité."/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <!-- Favicons -->
@@ -109,7 +109,7 @@
                                         <h3 class="titre_main">Bois de chauffage</h3>
                                     </div>
                                 </div>
-                                <p>Besoin de bois de qualité pour vous chauffer&nbsp;? Je vous propose du bois de chauffage belge vous promettant des heures entières de chaleur.</p>
+                                <p>À la recherche d’un bois sec et performant pour vous chauffer&nbsp;? Je vous propose du bois de chauffage régional de haute qualité, sélectionné pour vous apporter une chaleur durable et un rendement thermique idéal.</p>
                                 <a href="vente-bois-de-chauffage-hainaut.html" class="link" title="En savoir plus">En savoir plus</a>
                             </div>
                             <div class="item fade_up delay-200">
@@ -120,7 +120,7 @@
                                         <h3 class="titre_main">Bois de chauffage <br> sur palette</h3>
                                     </div>
                                 </div>
-                                <p>Bûches de 25cm ou 30 cm sur palette. Votre bois est déjà empilé pour un stockage compact. Livraison à domicile sur transpalette tout terrain.</p>
+                                <p>Bûches de 25 cm ou 33 cm rangées sur palette. Votre bois est déjà empilé pour un encombrement minimal au sol. Livraison soignée à votre domicile grâce à notre transpalette tout-terrain.</p>
                                 <a href="vente-bois-de-chauffage-hainaut.html" class="link" title="En savoir plus">En savoir plus</a>
                             </div>
                             <div class="item fade_up delay-300">
@@ -131,7 +131,7 @@
                                         <h3 class="titre_main">Bois pour pizzeria</h3>
                                     </div>
                                 </div>
-                                <p>Pour réaliser de bonnes pizzas, il faut un bois bien spécifique appelé bois de cuisson. J’ approvisionne vote établissement avec ce type de bois.</p>
+                                <p>Une cuisson au feu de bois réussie nécessite des essences dures adaptées aux hautes températures. J’approvisionne régulièrement pizzerias et restaurants avec un bois sec et fendu sur mesure.</p>
                                 <a href="bois-pizzeria.html" class="link" title="En savoir plus">En savoir plus</a>
                             </div>
                             <div class="item fade_up delay-400">
@@ -142,7 +142,7 @@
                                         <h3 class="titre_main">Bois d’allumage</h3>
                                     </div>
                                 </div>
-                                <p>Que ce soit pour allumer un barbecue ou un braséro, optez pour un bois d’allumage vous promettant un départ de feu simple et sans souci.</p>
+                                <p>Pour démarrer facilement vos feux ouverts, poêles ou braséros, nos bûchettes d’allumage bien sèches vous garantissent un embrasement rapide et propre sans fumées excessives.</p>
                                 <a href="bois-allumage.html" class="link" title="En savoir plus">En savoir plus</a>
                             </div>
                             <div class="item fade_up delay-500">
@@ -153,7 +153,7 @@
                                         <h3 class="titre_main">Buches compressées</h3>
                                     </div>
                                 </div>
-                                <p>Composées d’un agglomérat de déchets végétaux, les bûches compressées sont pratiques, écologiques et propres. Elles sont efficaces pour un chauffage au bois facile.</p>
+                                <p>Fabriquées par compression de résidus de bois non traités, les bûches densifiées sont très écologiques, propres et pratiques à manipuler. Elles offrent une montée en température rapide et une combustion constante.</p>
                                 <a href="buches-compressees.html" class="link" title="En savoir plus">En savoir plus</a>
                             </div>
                             <div class="item pellets fade_up delay-500">
@@ -164,7 +164,7 @@
                                         <h3 class="titre_main">Pellets</h3>
                                     </div>
                                 </div>
-                                <p>Découvrez le pellet PAULS 100 % belges, disponible en sacs de 15 kg et palettes de 70 sacs&nbsp;! Offrant un excellent pouvoir calorifique et une combustion efficace, c'est une solution de chauffage pratique et économique. En plus, il provient de forêts gérées durablement.</p>
+                                <p>Granulés de bois PAULS PELLETS 100 % belges, disponibles en sacs de 15 kg ou à la palette de 70 sacs. Certifiés haute performance, ils vous assurent un pouvoir calorifique élevé et un encrassement minimal de votre appareil.</p>
                                 <a href="pellets.html" class="link" title="En savoir plus">En savoir plus</a>
                             </div>
                         </div>
@@ -201,17 +201,17 @@
                             <div class="texte fade_in delay-400">
                                 <a href="services.php#livraison" title="Livraisons">
                                     <h4 class="titre_main">Livraisons en vrac ou en palette</h4>
-                                    <p>Mon service de livraison est rapide et pratique. Mes équipes s’occupent de tout pour que vous receviez rapidement votre commande de bois, en stère ou en palette, sur le seuil de votre porte dans le Brabant Wallon et ses alentours.</p>
+                                    <p>Profitez d’un service de livraison ponctuel et soigné. Que ce soit en vrac ou sur palette, nous livrons votre bois directement sur votre propriété dans le Hainaut, le Brabant Wallon et dans un rayon de 40 km autour de Fleurus.</p>
                                 </a>
                                 <a href="services.php#self" title="Self-service">
                                     <h4 class="titre_main">Self-service</h4>
-                                    <p>Vous préférez venir chercher votre bois et le transporter vous-même, ou vous avez besoin de petites quantités&nbsp;? Mon espace self-service facile et pratique, adapté à la prise en charge de vos bois n’attend que vous.</p>
+                                    <p>Vous disposez d’une remorque ou vous avez besoin de quelques sacs seulement&nbsp;? Notre point d’enlèvement self-service à Wagnelée vous accueille pour charger rapidement vos combustibles.</p>
                                     <p class="adress">Chaussée Romaine 2 - 6223 Wagnelée (Fleurus)</p>  
                                 </a>
 <!--
                                 <a href="services.php#exploitation" title="Exploitation">
                                     <h4 class="titre_main">Exploitation</h4>
-                                    <p>Qui dit bois dit évidemment exploitations forestières, ma spécialité. Avec mes équipes de spécialistes, je vous conseille et vous achète au prix juste votre surplus de bois, pour un win-win écologique&nbsp;!</p>
+                                    <p>L’exploitation forestière est mon cœur de métier depuis plus de 15 ans. Je propose également le rachat de vos lots et coupes de bois au tarif le plus juste, dans une démarche durable et respectueuse de l’environnement.</p>
                                 </a>
 -->
                             </div>
@@ -242,11 +242,11 @@
                     <div class="apropos morecontent animate fade_in delay-300">
                         <h3 class="titre_main">Qui suis-je&nbsp;?</h3>
                         <div class="titre">Le bois, une passion qui grandit de jour en jour</div>
-                        <p>Exploitant forestier pendant plus de 15 ans, je me suis spécialisé dans le bois prêt à brûler. Je mets mon expertise de <a href="exploitant-forestier-fleurus.html" title="marchand de bois">marchand de bois</a> au service de mes clients chaque jour en proposant du bois de qualité 100% belge provenant de mes propres exploitations. Pour faciliter votre expérience, je livre mes différents produits à base de bois dans le Brabant Wallon et ses alentours. <a class="link-plus" title="Lire plus">Lire plus</a></p>
+                        <p>Actif dans le secteur forestier depuis plus de 15 années, j’ai développé une maîtrise complète de la filière bois : de la coupe raisonnée au séchage naturel en passant par le façonnage soigné des bûches.</p>
 
                         <div class="textMore">
-                            <p>Mon engagement est simple&nbsp;: fournir à mes clients un bois local et de qualité supérieure, tout en maintenant un excellent rapport qualité-prix. Chaque bûche que je propose provient de forêts gérées durablement, garantissant ainsi non seulement la qualité mais aussi le respect de l'environnement.</p>
-                            <p>Je suis convaincu que le bois, en tant que ressource renouvelable, doit être exploité de manière responsable. Je travaille donc en étroite collaboration avec des fournisseurs locaux qui partagent ma vision de la durabilité. Cette approche locale minimise l’impact écologique de mon processus, mais également les coûts de transport, ce qui me permet de vous proposer des prix compétitifs sans compromettre la qualité du bois que vous commandez. <br><a class="link-moins" title="En savoir plus">Lire moins</a></p>
+                            <p>Mon objectif quotidien : valoriser nos ressources forestières locales et vous faire bénéficier d’un combustible de premier choix à des tarifs transparents et compétitifs.</p>
+                            <p>La préservation de notre patrimoine boisé est essentielle. C’est pourquoi tout notre bois provient de parcelles gérées durablement, garantissant la pérennité de nos forêts régionales.</p>
                         </div>
                         <a href="exploitant-forestier-fleurus.html" class="link" title="En savoir plus">En savoir plus</a>
                     </div>
@@ -265,11 +265,11 @@
                         <div class="item">
                             <div class="titre_plus">Comment puis-je garantir la qualité de mon bois&nbsp;?</div>
                             <div class="hide">
-                                <p>Je m'engage à fournir à mes clients du bois de chauffage de qualité, sélectionné avec soin auprès de sources fiables.</p>
-                                <p>Le bois est ensuite séché de manière contrôlée pour atteindre un taux d'humidité optimal. Un bon séchage permet une combustion plus efficace et limite la fumée. J'utilise pour cela des méthodes naturelles ou en séchoir.</p>
-                                <p>Je rachète également du bois aux particuliers de la région, en vérifiant systématiquement sa qualité avant utilisation.</p>
-                                <p>Des contrôles réguliers sont réalisés sur l'humidité, la taille et l'état des bûches. Le bois est ensuite stocké dans de bonnes conditions jusqu'à la livraison.</p>
-                                <p>Chaque commande est préparée avec soin et livrée rapidement, pour garantir un bois sec et prêt à l'emploi.</p>
+                                <p>Chaque essence (charme, hêtre, chêne, frêne) est choisie pour ses propriétés thermiques reconnues.</p>
+                                <p>Grâce à un séchage naturel sous hangar ventilé, nous garantissons un taux d’humidité inférieur à 20 %, garantissant un allumage aisé, un maximum de calories et des conduits préservés.</p>
+                                <p>Je propose également le rachat de grumes et de coupes de bois auprès des propriétaires privés de la région après expertise de la qualité des bois.</p>
+                                <p>Chaque lot fait l’objet de contrôles systématiques sur l’humidité et le calibrage des bûches avant livraison, afin de vous assurer une satisfaction totale dès la réception.</p>
+                                <p>Vos commandes sont préparées et conditionnées sur mesure pour une utilisation immédiate dès leur réception.</p>
                             </div>
                         </div>
                         <div class="item">

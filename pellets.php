@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Pellet PAULS en vente par sacs de 15kg chez Julien Boucquiaux </title>
-<meta name="description" content="Dans la région de Fleurus, Julien Boucquiaux vous propose un choix 100 % belge avec les pellets PAULS disponibles en sacs de 15kg, et palettes de 70 sacs."/>
+<title>Granulés de bois & Pellets Pauls 100% belges | Fleurus</title>
+<meta name="description" content="Achetez vos pellets de bois Pauls 100% belges à Fleurus. Vente par sac de 15kg ou palette de 70 sacs. Rendement thermique optimal et faible cendre."/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
