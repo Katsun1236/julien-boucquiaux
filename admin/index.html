@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Gestion | Julien Boucquiaux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/css/global.css">
+    <style>
+        body {
+            background-color: #f7f6f2;
+            font-family: 'Montserrat', sans-serif;
+            color: #2e2621;
+            padding: 40px 20px;
+        }
+        .admin-card {
+            max-width: 650px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .admin-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .admin-header img {
+            width: 70px;
+            margin-bottom: 15px;
+        }
+        .admin-header h1 {
+            font-size: 24px;
+            color: #2e2621;
+            margin-bottom: 8px;
+        }
+        .admin-header p {
+            color: #777;
+            font-size: 14px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #444;
+        }
+        input[type="password"], input[type="text"], textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #7fc957;
+        }
+        .btn-primary {
+            background: #7fc957;
+            color: #fff;
+            border: none;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover {
+            background: #6bb345;
+        }
+        .admin-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .page-link-btn {
+            display: block;
+            text-align: center;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .page-link-btn:hover {
+            border-color: #7fc957;
+            background: rgba(127, 201, 87, 0.1);
+            color: #2e2621;
+        }
+        .section-box {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .section-box h3 {
+            margin-bottom: 15px;
+            font-size: 17px;
+            color: #2e2621;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-card" id="loginCard">
+    <div class="admin-header">
+        <img src="/images/logo.svg" alt="Julien Boucquiaux">
+        <h1>Espace Gestion Privé</h1>
+        <p>Veuillez entrer votre mot de passe pour accéder à la modification du site :</p>
+    </div>
+    <div class="form-group">
+        <label for="adminPassword">Mot de passe de sécurité :</label>
+        <input type="password" id="adminPassword" placeholder="••••••••••••••••" autofocus>
+    </div>
+    <button class="btn-primary" id="btnLogin">Connexion</button>
+</div>
+
+<div class="admin-card" id="dashboardCard" style="display:none; max-width: 750px;">
+    <div class="admin-header">
+        <img src="/images/logo.svg" alt="Julien Boucquiaux">
+        <h1>Gestion & Modification du Site</h1>
+        <p>Bienvenue dans votre espace d'administration Julien Boucquiaux.</p>
+    </div>
+
+    <!-- Section 1 : Bandeau d'annonce -->
+    <div class="section-box">
+        <h3>📢 Bandeau d'annonce en haut du site</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 12px;">Activez un message visible par tous vos clients en tête de chaque page (congés, promos, réapprovisionnement...).</p>
+        <div class="form-group">
+            <input type="text" id="bannerTextInput" placeholder="Ex: Congés annuels du 1er au 15 août inclus - réouverture le 16 août">
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <button class="btn-primary" id="btnSaveBanner" style="flex: 1;">Enregistrer le bandeau</button>
+            <button id="btnClearBanner" style="background:#eee; border:none; border-radius:8px; padding:0 20px; font-weight:600; cursor:pointer;">Désactiver</button>
+        </div>
+    </div>
+
+    <!-- Section 2 : Éditeur visuel direct sur les pages -->
+    <div class="section-box">
+        <h3>✏️ Modifier les pages en direct (Textes & Tarifs)</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 15px;">Cliquez sur la page que vous souhaitez modifier. Vous pourrez cliquer sur n'importe quel texte ou prix directement sur l'écran pour le changer en temps réel :</p>
+        <div class="admin-links">
+            <a href="/index.html?gestion=1" class="page-link-btn" target="_blank">🏠 Modifier l'Accueil</a>
+            <a href="/tarifs.html?gestion=1" class="page-link-btn" target="_blank">💶 Modifier les Tarifs</a>
+            <a href="/vente-bois-de-chauffage-hainaut.html?gestion=1" class="page-link-btn" target="_blank">🪵 Bois de chauffage</a>
+            <a href="/pellets.html?gestion=1" class="page-link-btn" target="_blank">🔥 Pellets Pauls</a>
+            <a href="/services.html?gestion=1" class="page-link-btn" target="_blank">🚚 Services & Self-service</a>
+            <a href="/contact.html?gestion=1" class="page-link-btn" target="_blank">📞 Contact & Horaires</a>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button id="btnLogout" style="background:transparent; border:none; color:#c0392b; font-weight:600; cursor:pointer;">Se déconnecter</button>
+    </div>
+</div>
+
+<script>
+    const HASH = "5088efd7224c059084ef9dea8a933ab91f0d9f82496d1a14f5c217829da5b245";
+    const BANNER_KEY = "julien_top_banner";
+
+    async function sha256(str) {
+        const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+        return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    const input = document.getElementById("adminPassword");
+    const btnLogin = document.getElementById("btnLogin");
+
+    async function checkLogin() {
+        const entered = input.value;
+        const hashed = await sha256(entered);
+        if (hashed === HASH) {
+            sessionStorage.setItem("julien_auth_token", hashed);
+            sessionStorage.setItem("julien_editor_pin", "Julien#2026@FleurusBois!");
+            showDashboard();
+        } else {
+            alert("Mot de passe incorrect.");
+            input.value = "";
+            input.focus();
+        }
+    }
+
+    function showDashboard() {
+        document.getElementById("loginCard").style.display = "none";
+        document.getElementById("dashboardCard").style.display = "block";
+        const bannerData = JSON.parse(localStorage.getItem(BANNER_KEY) || '{"active":false,"text":""}');
+        if (bannerData.active && bannerData.text) {
+            document.getElementById("bannerTextInput").value = bannerData.text;
+        }
+    }
+
+    btnLogin.addEventListener("click", checkLogin);
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter") checkLogin(); });
+
+    if (sessionStorage.getItem("julien_auth_token") === HASH) {
+        showDashboard();
+    }
+
+    document.getElementById("btnSaveBanner").addEventListener("click", () => {
+        const text = document.getElementById("bannerTextInput").value.trim();
+        if (text) {
+            localStorage.setItem(BANNER_KEY, JSON.stringify({ active: true, text: text }));
+            alert("Le bandeau d'annonce a été mis à jour !");
+        } else {
+            localStorage.setItem(BANNER_KEY, JSON.stringify({ active: false, text: "" }));
+            alert("Le bandeau d'annonce a été désactivé.");
+        }
+    });
+
+    document.getElementById("btnClearBanner").addEventListener("click", () => {
+        document.getElementById("bannerTextInput").value = "";
+        localStorage.setItem(BANNER_KEY, JSON.stringify({ active: false, text: "" }));
+        alert("Bandeau d'annonce désactivé.");
+    });
+
+    document.getElementById("btnLogout").addEventListener("click", () => {
+        sessionStorage.removeItem("julien_auth_token");
+        sessionStorage.removeItem("julien_editor_pin");
+        window.location.reload();
+    });
+</script>
+</body>
+</html>
